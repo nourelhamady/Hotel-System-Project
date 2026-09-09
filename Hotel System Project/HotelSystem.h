@@ -8,13 +8,13 @@ class HotelSystem
 {
 private:
     list<Room> rooms;
-    map<int,queue<Customer>> waitingList;
+    map<int,queue<Customer>> waitingList;//bonus using map 
 public:
-    HotelSystem();
+    HotelSystem();//rooms
     void addRoom(Room r);
-    void addToWaitingList(Customer c,int room_number);
+    void addToWaitingList(Customer c,int room_number);//bonus adding number of room also 
     void showRooms();
-    void ShowBookedRooms();
+    void ShowBookedRooms();//bonus
     void showWaitingList();
     list<Room>& getRooms();
 };

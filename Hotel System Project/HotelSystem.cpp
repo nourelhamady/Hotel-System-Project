@@ -1,6 +1,6 @@
 #include "HotelSystem.h"
 #include <iostream>
-HotelSystem::HotelSystem()
+HotelSystem::HotelSystem()//bonus saved data
 {
     rooms.push_back(Room(101, 500));
     rooms.push_back(Room(102, 500));
@@ -25,7 +25,7 @@ void HotelSystem::addToWaitingList(Customer c,int room_number)
 {
     waitingList[room_number].push(c);
 }
-void HotelSystem::showRooms()
+void HotelSystem::showRooms()//bonus ui only
 {
     cout << endl;
     cout << "==================================================" << endl;
@@ -39,7 +39,7 @@ void HotelSystem::showRooms()
 
     cout << "==================================================" << endl;
 }
-void HotelSystem::ShowBookedRooms()
+void HotelSystem::ShowBookedRooms()//bonus
 {
     list<Room> x = getRooms();
 
@@ -67,7 +67,7 @@ void HotelSystem::ShowBookedRooms()
 
     cout << "==================================================" << endl;
 }
-void HotelSystem::showWaitingList()
+void HotelSystem::showWaitingList()//bonus ui only + using map
 {
     cout << endl;
     cout << "==================================================" << endl;

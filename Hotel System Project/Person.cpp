@@ -6,15 +6,15 @@ void Person::setData(string n, int i)
 	name = n;
 	id = i;
 }
-string Person::getName()
+string Person::getName()//bonus
 {
 	return name;
 }
-int Person::getID()
+int Person::getID()//bonus
 {
 	return id;
 }
-void Person::showData()
+void Person::showData()//bonus ui only
 {
     cout << "\n";
     cout << "---------------- MY INFORMATION ----------------" << endl;

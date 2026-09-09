@@ -32,11 +32,11 @@ double Room::getPrice()
 {
     return price;
 }
-int Room::getrnumber()
+int Room::getrnumber()//bonus
 {
     return roomnumber;
 }
-void Room::showRoom()
+void Room::showRoom()//bonus ui only
 {
     cout << "+------------------------------------------------+" << endl;
 

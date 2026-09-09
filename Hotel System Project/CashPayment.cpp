@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void CashPayment::pay(double price)
+void CashPayment::pay(double price)//bonus ui + adding price or amount
 {
     cout << "\n";
     cout << "==================================================" << endl;

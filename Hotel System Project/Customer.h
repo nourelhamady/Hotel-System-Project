@@ -5,10 +5,10 @@
 class HotelSystem;
 class Customer : public Person
 {
-
-    vector<Room> mybookings;
+private:
+    vector<Room> mybookings;//bonus
 public:
     void bookRoom(Room& r, HotelSystem& h);
     void cancelRoom(Room& r);
-    bool showMyBookings();
+    bool showMyBookings();//bonus 
 };

@@ -45,8 +45,9 @@ void managerUI(HotelSystem& hotel)
         cout << "                  MANAGER MENU                   " << endl;
         cout << endl;
         cout << "   1.  Show All Rooms" << endl;
-        cout << "   2.  Show Waiting List" << endl;
-        cout << "   3.  Show Booked Rooms" << endl;
+        cout << "   2.  Add Room" << endl;
+        cout << "   3.  Show Waiting List" << endl;
+        cout << "   4.  Show Booked Rooms" << endl;
         cout << "   0.  Logout" << endl;
         cout << "--------------------------------------------------" << endl;
 
@@ -59,12 +60,21 @@ void managerUI(HotelSystem& hotel)
         case 1:
             m.showRooms(hotel);
             break;
-
         case 2:
+            cout << "\n";
+            cout << "==================================================" << endl;
+            cout << "                   ADD ROOM                       " << endl;
+            cout << "==================================================" << endl;
+
+            m.addRoom(hotel);
+
+            cout << "==================================================" << endl;
+            break;
+        case 3:
             m.showWaitingList(hotel);
             break;
 
-        case 3:
+        case 4:
             m.ShowBookedRooms(hotel);
             break;
 

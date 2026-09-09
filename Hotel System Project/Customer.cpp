@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Customer::bookRoom(Room& r, HotelSystem& h)
+void Customer::bookRoom(Room& r, HotelSystem& h)//bonus ui + asking if he wantes to be added to waiting list
 {
     if (r.book())
     {
@@ -45,7 +45,7 @@ void Customer::bookRoom(Room& r, HotelSystem& h)
     }
 }
 
-void Customer::cancelRoom(Room& r)
+void Customer::cancelRoom(Room& r)//bonus ui only
 {
     if (mybookings.empty())
     {
@@ -82,7 +82,7 @@ void Customer::cancelRoom(Room& r)
     cout << "--------------------------------------------------" << endl;
 }
 
-bool Customer::showMyBookings()
+bool Customer::showMyBookings()//bonus + ui bonus
 {
     if (mybookings.empty())
     {

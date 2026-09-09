@@ -14,6 +14,6 @@ public:
     void cancel();
     bool isAvailable();
     double getPrice();
-    int getrnumber();
+    int getrnumber();//bonus
     void showRoom();
 };

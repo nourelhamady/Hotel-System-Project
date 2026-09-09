@@ -8,8 +8,8 @@ protected:
 	int id;
 public:
 	void setData(string n, int i);
-	string getName();
-	int getID();
+	string getName();//bonus
+	int getID();//bonus
 	void showData();
 };
 
